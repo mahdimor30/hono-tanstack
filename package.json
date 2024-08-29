@@ -9,7 +9,7 @@
     "build": "bun run build.client && bun run build.server",
     
     "build.client": "bunx --bun  vite build --outDir dist/client --ssrManifest",
-    "build.server": "bunx --bun  vite build --outDir dist/server --ssr src/entry-server.tsx ",
+    "build.server": "bunx --bun  vite build --outDir dist/server --ssr ./src/entry-server.tsx ",
     "start": "bun --bun dist/server.js --port 3000",
     "typecheck": "tsc"
   },
